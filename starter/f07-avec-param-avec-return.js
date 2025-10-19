@@ -14,6 +14,11 @@
    b) "Sophie"
 */
 
+function direBonjour(prenom){
+    return 'Bonjour ' + prenom;
+}
+console.log(direBonjour('Baptiste'));
+
 // RETURN, PORTÉE DE VARIABLE, PARAMÈTRE - RÉSUMÉ GLOBAL :
 /*
 Le RETURN, la VARIABLE GLOBALE et le PARAMÈTRE sont

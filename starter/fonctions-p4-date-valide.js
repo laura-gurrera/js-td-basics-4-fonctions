@@ -27,8 +27,9 @@ function isValid(day, month, year){
         case 'mai':
         case 'juillet':
         case 'août':
+        case 'aout':
         case 'octobre':
-        case 'decembre':
+        case 'décembre':
             maxDays=31;
             break;
         case 'avril':
@@ -41,7 +42,11 @@ function isValid(day, month, year){
             maxDays= isBissextile(year)? 29 : 28;
             break;
     }
-    (day>0 && day<=maxDays)? console.log(`Le ${day} ${month} ${year} est une date valide`) : console.log(`Le ${day} ${month} ${year} n'est pas une date valide`);
+    if(day>0 && day<=maxDays) {
+        console.log(`Le ${day} ${month} ${year} est une date valide`);
+    }else{
+        console.log(`Le ${day} ${month} ${year} n'est pas une date valide`);
+    }
 }
 
 // Demander à l'utilisateur de saisir une date
